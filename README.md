@@ -1,4 +1,5 @@
-# inventary-managment-system---moon
+#ims
+
 this is the repository for the inventory management system made by the team moon
 At the end of their day, cooks and managers in the cafeteria industry spend a couple of hours counting inventory and placing orders for the following week. The Cafeteria Inventory Management System is designed to not only assist in this problem.
 
