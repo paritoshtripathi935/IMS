@@ -7,14 +7,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 
-<AnchorPane maxHeight="600" maxWidth="1000" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" styleClass="anc" stylesheets="/css/app.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="600" maxWidth="1000" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" styleClass="anc" stylesheets="@../css/app.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <AnchorPane layoutX="-2.0" layoutY="-1.0" prefHeight="600.0" prefWidth="447.0" styleClass="c1">
          <children>
             <JFXButton buttonType="RAISED" layoutX="105.0" layoutY="400.0" prefHeight="29.0" prefWidth="77.0" ripplerFill="BLACK" styleClass="btn" text="Login" textFill="WHITE" />
             <JFXButton buttonType="RAISED" layoutX="263.0" layoutY="400.0" prefHeight="29.0" prefWidth="77.0" ripplerFill="BLACK" styleClass="btn" text="Signup" textFill="WHITE" />
             <TextField layoutX="105.0" layoutY="225.0" prefHeight="29.0" prefWidth="238.0" text="Username" />
-            <Pane layoutX="159.0" layoutY="65.0" prefHeight="127.0" prefWidth="127.0" styleClass="logo" />
+            <Pane layoutX="144.0" layoutY="46.0" prefHeight="173.0" prefWidth="172.0" styleClass="logo" />
             <PasswordField layoutX="105.0" layoutY="281.0" prefHeight="29.0" prefWidth="238.0" text="Password" />
          </children>
          <effect>
