@@ -2,7 +2,8 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXComboBox?>
-<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
@@ -14,9 +15,18 @@
             <Font size="16.0" />
          </font>
       </Text>
-      <JFXTreeTableView layoutY="54.0" prefHeight="347.0" prefWidth="600.0" />
-      <JFXComboBox focusColor="WHITE" layoutX="313.0" layoutY="15.0" promptText="Month" unFocusColor="WHITE" />
-      <JFXComboBox focusColor="WHITE" layoutX="417.0" layoutY="15.0" promptText="Year" unFocusColor="WHITE" />
+      <JFXComboBox focusColor="BLACK" layoutX="313.0" layoutY="15.0" promptText="Month" unFocusColor="BLACK" />
+      <JFXComboBox focusColor="WHITE" layoutX="417.0" layoutY="15.0" promptText="Year" unFocusColor="BLACK" />
       <JFXButton buttonType="RAISED" layoutX="513.0" layoutY="10.0" prefHeight="35.0" prefWidth="73.0" ripplerFill="WHITE" styleClass="dash-btn" stylesheets="@../css/app.css" text="Search" textFill="WHITE" />
+      <TableView layoutY="60.0" prefHeight="340.0" prefWidth="600.0" styleClass="back" stylesheets="@../css/app.css">
+        <columns>
+          <TableColumn prefWidth="45.0" text="S.No." />
+            <TableColumn prefWidth="132.0" text="Product Code" />
+          <TableColumn prefWidth="126.0" text="Name" />
+            <TableColumn prefWidth="110.0" text="Company" />
+            <TableColumn minWidth="0.0" prefWidth="82.0" text="Quantity" />
+            <TableColumn prefWidth="103.0" text="Date Recieved" />
+        </columns>
+      </TableView>
    </children>
 </Pane>
