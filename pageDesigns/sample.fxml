@@ -13,9 +13,9 @@
          <children>
             <JFXButton buttonType="RAISED" layoutX="105.0" layoutY="400.0" prefHeight="29.0" prefWidth="77.0" ripplerFill="BLACK" styleClass="btn" text="Login" textFill="WHITE" />
             <JFXButton buttonType="RAISED" layoutX="263.0" layoutY="400.0" prefHeight="29.0" prefWidth="77.0" ripplerFill="BLACK" styleClass="btn" text="Signup" textFill="WHITE" />
-            <TextField layoutX="105.0" layoutY="225.0" prefHeight="29.0" prefWidth="238.0" text="Username" />
+            <TextField layoutX="105.0" layoutY="225.0" prefHeight="29.0" prefWidth="238.0" promptText="Username" />
             <Pane layoutX="144.0" layoutY="46.0" prefHeight="173.0" prefWidth="172.0" styleClass="logo" />
-            <PasswordField layoutX="105.0" layoutY="281.0" prefHeight="29.0" prefWidth="238.0" text="Password" />
+            <PasswordField layoutX="105.0" layoutY="281.0" prefHeight="29.0" prefWidth="238.0" promptText="Password" />
          </children>
          <effect>
             <DropShadow height="77.71" radius="38.2625" width="77.34" />

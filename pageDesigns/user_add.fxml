@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
@@ -8,52 +10,69 @@
 
 <AnchorPane prefHeight="600.0" prefWidth="1000.0" styleClass="reg-back" stylesheets="@../css/app.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Stocklog.Dash.Dashb">
    <children>
-      <Pane prefHeight="600.0" prefWidth="461.0" styleClass="grad2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="539.0" AnchorPane.topAnchor="0.0" />
+      <Pane prefHeight="600.0" prefWidth="461.0" styleClass="grad2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="539.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton layoutX="112.0" layoutY="504.0" prefHeight="32.0" prefWidth="61.0" ripplerFill="WHITE" styleClass="back" text="Submit">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="232.0" layoutY="503.0" prefHeight="32.0" prefWidth="55.0" styleClass="btn-log" text="Clear" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="339.0" layoutY="504.0" prefHeight="32.0" prefWidth="61.0" ripplerFill="WHITE" styleClass="back" text="Cancel">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </JFXButton>
+            <PasswordField layoutX="221.0" layoutY="340.0" />
+            <PasswordField layoutX="221.0" layoutY="391.0" />
+         </children></Pane>
       <TextField layoutX="222.0" layoutY="133.0" />
       <TextField layoutX="222.0" layoutY="185.0" />
       <TextField layoutX="222.0" layoutY="237.0" />
       <TextField layoutX="222.0" layoutY="290.0" />
-      <TextField layoutX="222.0" layoutY="341.0" />
-      <TextField layoutX="221.0" layoutY="390.0" />
       <Text layoutX="84.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee No.">
          <font>
-            <Font name="Arial" size="14.0" />
+            <Font name="Segoe UI Light" size="14.0" />
          </font>
       </Text>
       <Text layoutX="85.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
          <font>
-            <Font name="Arial" size="14.0" />
+            <Font name="Segoe UI Light" size="14.0" />
          </font>
       </Text>
       <Text layoutX="86.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name">
          <font>
-            <Font name="Arial" size="14.0" />
+            <Font name="Segoe UI Light" size="14.0" />
          </font>
       </Text>
       <Text layoutX="86.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login ID">
          <font>
-            <Font name="Arial" size="14.0" />
+            <Font name="Segoe UI Light" size="14.0" />
          </font>
       </Text>
       <Text layoutX="85.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
          <font>
-            <Font name="Arial" size="14.0" />
+            <Font name="Segoe UI Light" size="14.0" />
          </font>
       </Text>
       <Text layoutX="85.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm Password">
          <font>
-            <Font name="Arial" size="14.0" />
+            <Font name="Segoe UI Light" size="14.0" />
          </font>
       </Text>
       <TextField layoutX="221.0" layoutY="443.0" />
       <Text layoutX="86.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number">
          <font>
-            <Font name="Arial" size="14.0" />
+            <Font name="Segoe UI Light" size="14.0" />
          </font>
       </Text>
-      <Text layoutX="138.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration">
+      <Text layoutX="138.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration">
          <font>
-            <Font name="Segoe UI Light" size="33.0" />
+            <Font name="Segoe UI" size="33.0" />
          </font>
       </Text>
    </children>
