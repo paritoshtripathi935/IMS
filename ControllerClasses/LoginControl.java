@@ -33,6 +33,7 @@ public class LoginControl {
 
     @FXML
     public void LoginAction(ActionEvent evt){
+
         String username = UserTf.getText();
         String password = PassTF.getText();
 
@@ -43,7 +44,7 @@ public class LoginControl {
             while(rs.next()){
                 if(rs.getString("LoginID").equals(username) && rs.getString("Password").equals(password)) {
                     if(rs.getString("Admin").equals("Yes")) {
-                        Parent AdminBoard = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/pageDesigns/Adminpanel.fxml")));
+                        Parent AdminBoard = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/pageDesigns/AdminBoard.fxml")));
                         Scene AdminBoardScene = new Scene(AdminBoard);
                         Stage userStage = (Stage) ((Node) evt.getSource()).getScene().getWindow();
                         userStage.setScene(AdminBoardScene);
@@ -53,7 +54,7 @@ public class LoginControl {
                 }
                 if(rs.getString("LoginID").equals(username) && rs.getString("Password").equals(password)) {
                     if(rs.getString("Admin").equals("No")){
-                        Parent userAdd = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/pageDesigns/UserAdd.fxml")));
+                        Parent userAdd = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/pageDesigns/dashb.fxml")));
                         Scene userAddScene = new Scene(userAdd);
                         Stage userStage = (Stage) ((Node) evt.getSource()).getScene().getWindow();
                         userStage.setScene(userAddScene);
