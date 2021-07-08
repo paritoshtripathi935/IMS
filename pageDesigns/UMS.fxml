@@ -6,7 +6,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="600.0" prefWidth="1000.0" styleClass="app-back" stylesheets="@../css/app.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerClasses.AdminPanelController">
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" styleClass="app-back" stylesheets="@../css/app.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerClasses.UMSControl">
     <children>
         <Pane layoutX="-28.0" prefHeight="604.0" prefWidth="187.0" styleClass="menu-bar" stylesheets="/css/app.css">
             <children>
@@ -20,7 +20,7 @@
                     <font>
                         <Font name="Segoe UI" size="13.0" />
                     </font></JFXButton>
-                <JFXButton fx:id="UMSbutton" alignment="CENTER" buttonType="RAISED" layoutX="20.0" layoutY="235.0" onAction="#UMSOpenAction" prefHeight="40.0" prefWidth="134.0" styleClass="dash-btn" text="UMS" textFill="WHITE">
+                <JFXButton fx:id="UMSbutton" alignment="CENTER" buttonType="RAISED" layoutX="20.0" layoutY="235.0" prefHeight="40.0" prefWidth="169.0" styleClass="dash-btn" text="UMS" textFill="WHITE">
                     <font>
                         <Font name="Segoe UI" size="13.0" />
                     </font></JFXButton>
@@ -40,15 +40,24 @@
         </Pane>
         <Pane layoutX="159.0" prefHeight="28.0" prefWidth="841.0" styleClass="dash-title">
             <children>
-                <Text fill="WHITE" layoutX="14.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DASHBOARD">
+                <Text fill="WHITE" layoutX="14.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Management System">
                     <font>
-                        <Font name="System Bold" size="15.0" />
+                        <Font name="System Bold" size="19.0" />
                     </font>
                 </Text>
             </children></Pane>
-        <Pane layoutX="174.0" layoutY="48.0" prefHeight="232.0" prefWidth="484.0" styleClass="dash-tile" />
-        <Pane layoutX="676.0" layoutY="49.0" prefHeight="232.0" prefWidth="311.0" styleClass="dash-tile" />
-        <Pane layoutX="460.0" layoutY="305.0" prefHeight="232.0" prefWidth="527.0" styleClass="dash-tile" />
-        <Pane layoutX="173.0" layoutY="304.0" prefHeight="232.0" prefWidth="268.0" styleClass="dash-tile" />
+        <Pane layoutX="159.0" layoutY="28.0" prefHeight="575.0" prefWidth="842.0" styleClass="back">
+         <children>
+            <JFXButton fx:id="CrUserBTN" alignment="CENTER" buttonType="RAISED" layoutX="70.0" layoutY="80.0" onAction="#UserCreate" prefHeight="105.0" prefWidth="157.0" ripplerFill="#2f71ff" styleClass="btn-style2" stylesheets="/css/app.css" text="Create User" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Segoe UI Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ManageUserBTN" alignment="CENTER" buttonType="RAISED" layoutX="309.0" layoutY="80.0" prefHeight="105.0" prefWidth="157.0" ripplerFill="#2f71ff" styleClass="btn-style2" stylesheets="/css/app.css" text="Manage Users" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Segoe UI Bold" size="20.0" />
+               </font>
+            </JFXButton>
+         </children></Pane>
     </children>
 </AnchorPane>
