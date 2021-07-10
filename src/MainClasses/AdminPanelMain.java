@@ -8,12 +8,12 @@ import javafx.stage.Stage;
 
 import java.util.Objects;
 
-public class LoginMain extends Application {
+public class AdminPanelMain extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/pageDesigns/LoginDesign.fxml")));
-        primaryStage.setTitle("Login");
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/pageDesigns/AdminBoard.fxml")));
+        primaryStage.setTitle("Admin Dashboard");
         primaryStage.setScene(new Scene(root, 1000, 600));
         primaryStage.show();
     }

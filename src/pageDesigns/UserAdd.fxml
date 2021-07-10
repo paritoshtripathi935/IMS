@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" styleClass="reg-back" stylesheets="@../css/app.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerClasses.UserAddControl">
+   <children>
+      <Pane layoutY="-24.0" prefHeight="624.0" prefWidth="579.0" styleClass="grad2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="421.0" AnchorPane.topAnchor="-24.0">
+         <children>
+            <JFXButton fx:id="regUser" layoutX="132.0" layoutY="492.0" onAction="#registerAct" prefHeight="41.0" prefWidth="106.0" ripplerFill="WHITE" styleClass="btn" text="Submit" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ClearBtn" layoutX="495.0" layoutY="392.0" onAction="#clearAll" prefHeight="32.0" prefWidth="55.0" styleClass="btn-log" text="Clear" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="CancelBtn" layoutX="348.0" layoutY="492.0" onAction="#switchAct" prefHeight="41.0" prefWidth="106.0" ripplerFill="WHITE" styleClass="btn" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="13.0" />
+               </font>
+            </JFXButton>
+            <PasswordField fx:id="Password" layoutX="401.0" layoutY="282.0" />
+            <PasswordField fx:id="ConfPass" layoutX="401.0" layoutY="341.0" />
+            <Text layoutX="222.0" layoutY="415.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Is the user an admin?" wrappingWidth="148.5078125">
+               <font>
+                  <Font name="Segoe UI Semibold" size="14.0" />
+               </font>
+            </Text>
+            <JFXRadioButton fx:id="YesRB" layoutX="234.0" layoutY="432.0" text="Yes">
+               <toggleGroup>
+                  <ToggleGroup fx:id="AdminSelection" />
+               </toggleGroup>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="NoRB" layoutX="299.0" layoutY="432.0" text="No" toggleGroup="$AdminSelection" />
+            <TextField fx:id="EmpNo" layoutX="132.0" layoutY="178.0" />
+            <TextField fx:id="Fname" layoutX="132.0" layoutY="228.0" />
+            <TextField fx:id="Lname" layoutX="132.0" layoutY="285.0" />
+            <TextField fx:id="Login" layoutX="401.0" layoutY="178.0" />
+            <TextField fx:id="Phone" layoutX="401.0" layoutY="228.0" />
+            <TextField fx:id="Position" layoutX="132.0" layoutY="340.0" />
+            <Text layoutX="28.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee No.">
+               <font>
+                  <Font name="Segoe UI Light" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="28.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
+               <font>
+                  <Font name="Segoe UI Light" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="28.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name">
+               <font>
+                  <Font name="Segoe UI Light" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="311.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login ID">
+               <font>
+                  <Font name="Segoe UI Light" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="308.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+               <font>
+                  <Font name="Segoe UI Light" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="307.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm Password" wrappingWidth="89.810546875">
+               <font>
+                  <Font name="Segoe UI Light" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="309.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number" wrappingWidth="69.810546875">
+               <font>
+                  <Font name="Segoe UI Light" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="281.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REGISTRATION" wrappingWidth="212.64990234375">
+               <font>
+                  <Font name="Segoe UI Light" size="29.0" />
+               </font>
+            </Text>
+            <Text layoutX="29.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Position">
+               <font>
+                  <Font name="Segoe UI Light" size="14.0" />
+               </font>
+            </Text>
+            <Label fx:id="Status" layoutX="38.0" layoutY="130.0" prefHeight="25.0" prefWidth="332.0">
+               <font>
+                  <Font name="Segoe UI" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="85.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/logo-crop.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+   </children>
+</AnchorPane>

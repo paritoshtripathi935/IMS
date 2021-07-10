@@ -1,0 +1,55 @@
+.anc{
+    -fx-background-image: url('../Images/win.jfif');
+    -fx-background-size: 100% 100%;
+}
+.c1{
+    -fx-background-color: linear-gradient(to right, #ffffff, #ffffff);
+}
+.logo{
+    -fx-background-image: url('../Images/logo.png');
+    -fx-background-size: 100% 100%;
+}
+.logo-dash{
+	-fx-background-image: url('../Images/logo.png');
+	-fx-background-size: 100% 100%;
+	-fx-background-repeat: none;
+}
+.btn{
+    -fx-background-color: linear-gradient(to right, #082c79, #0553b3);
+}
+.menu-bar{
+    -fx-background-color: linear-gradient(to right, #ffffff, #ffffff);
+}
+.menu-label{
+    -fx-text-fill: white;
+}
+.app-back
+{
+    -fx-background-color: linear-gradient(to right, #284292, #030e2c);
+}
+.dash-btn{
+    -fx-background-color: #45aa27;
+}
+.dash-title{
+    -fx-background-color: #141414;
+}
+.dash-tile{
+    -fx-background-color: #ebebeb;
+}
+.btn-log{
+    -fx-background-color: #f84444;
+}
+.back{
+    -fx-background-color: #fdfbd7;
+}
+.btn-style2{
+    -fx-background-color: #45aa27;
+
+}
+.grad2{
+    -fx-background-color: linear-gradient(to right, rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90));
+}
+.reg-back{
+    -fx-background-image: url('../Images/anthony.jpg');
+    -fx-background-size: 100% 100%;
+}
