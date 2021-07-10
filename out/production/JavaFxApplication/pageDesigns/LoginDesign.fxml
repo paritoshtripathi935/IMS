@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="600" maxWidth="1000" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" styleClass="anc" stylesheets="@../css/app.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerClasses.LoginControl">
+   <children>
+      <AnchorPane layoutX="-2.0" layoutY="-1.0" prefHeight="600.0" prefWidth="447.0" styleClass="c1">
+         <children>
+            <JFXButton fx:id="LoginButton" buttonType="RAISED" layoutX="105.0" layoutY="400.0" onAction="#LoginAction" prefHeight="29.0" prefWidth="77.0" ripplerFill="BLACK" styleClass="btn" text="Login" textFill="WHITE" />
+            <JFXButton buttonType="RAISED" layoutX="263.0" layoutY="400.0" prefHeight="29.0" prefWidth="77.0" ripplerFill="BLACK" styleClass="btn" text="Signup" textFill="WHITE" />
+            <TextField fx:id="UserTf" layoutX="105.0" layoutY="225.0" prefHeight="29.0" prefWidth="238.0" promptText="Username" />
+            <Pane layoutX="144.0" layoutY="46.0" prefHeight="173.0" prefWidth="172.0" styleClass="logo" stylesheets="@../css/app.css" />
+            <PasswordField fx:id="PassTF" layoutX="105.0" layoutY="281.0" prefHeight="29.0" prefWidth="238.0" promptText="Password" />
+            <Label fx:id="Stat" layoutX="144.0" layoutY="482.0" prefHeight="30.0" prefWidth="144.0">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow height="77.71" radius="38.2625" width="77.34" />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>
