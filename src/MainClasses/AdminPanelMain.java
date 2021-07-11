@@ -10,6 +10,7 @@ import java.util.Objects;
 
 public class AdminPanelMain extends Application {
 
+
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/pageDesigns/AdminBoard.fxml")));
@@ -17,7 +18,6 @@ public class AdminPanelMain extends Application {
         primaryStage.setScene(new Scene(root, 1000, 600));
         primaryStage.show();
     }
-
 
     public static void main(String[] args) {
         launch(args);

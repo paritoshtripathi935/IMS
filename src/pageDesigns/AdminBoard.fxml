@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
@@ -8,14 +15,14 @@
 
 <AnchorPane prefHeight="600.0" prefWidth="1000.0" styleClass="app-back" stylesheets="@../css/app.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerClasses.AdminPanelController">
     <children>
-        <Pane layoutX="-28.0" prefHeight="604.0" prefWidth="187.0" styleClass="menu-bar" stylesheets="/css/app.css">
+        <Pane fx:id="Pane" layoutX="-28.0" prefHeight="604.0" prefWidth="187.0" styleClass="menu-bar" stylesheets="/css/app.css">
             <children>
                 <Pane layoutX="23.0" layoutY="-37.0" prefHeight="175.0" prefWidth="167.0" styleClass="logo" stylesheets="@../css/app.css" />
                 <JFXButton fx:id="IncomBtn" alignment="CENTER" buttonType="RAISED" layoutX="28.0" layoutY="116.0" onAction="#IncomingOpenAction" prefHeight="40.0" prefWidth="125.0" styleClass="dash-btn" text="INCOMING" textAlignment="CENTER" textFill="WHITE">
                     <font>
                         <Font name="Segoe UI" size="13.0" />
                     </font>
-            </JFXButton>
+                </JFXButton>
                 <JFXButton fx:id="OutgoingBtn" alignment="CENTER" buttonType="RAISED" layoutX="28.0" layoutY="175.0" onAction="#OutgoingOpenAction" prefHeight="40.0" prefWidth="125.0" styleClass="dash-btn" text="OUTGOING" textFill="WHITE">
                     <font>
                         <Font name="Segoe UI" size="13.0" />
@@ -48,7 +55,32 @@
             </children></Pane>
         <Pane layoutX="174.0" layoutY="48.0" prefHeight="232.0" prefWidth="484.0" styleClass="dash-tile" />
         <Pane layoutX="676.0" layoutY="49.0" prefHeight="232.0" prefWidth="311.0" styleClass="dash-tile" />
-        <Pane layoutX="460.0" layoutY="305.0" prefHeight="232.0" prefWidth="527.0" styleClass="dash-tile" />
+        <Pane layoutX="460.0" layoutY="305.0" prefHeight="232.0" prefWidth="527.0" styleClass="dash-tile">
+            <children>
+                <LineChart fx:id="lineChart" prefHeight="232.0" prefWidth="527.0" title="Inventory Storage ">
+                    <xAxis>
+                        <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis side="LEFT" />
+                    </yAxis>
+                </LineChart>
+                <Button layoutX="416.0" layoutY="7.0" mnemonicParsing="false" onAction="#loadChart" text="Show Chart" textFill="#1b1313">
+                    <font>
+                        <Font name="Segoe UI" size="13.0" />
+                    </font>
+                    <effect>
+                        <Lighting>
+                            <bumpInput>
+                                <Shadow />
+                            </bumpInput>
+                            <light>
+                                <Light.Distant />
+                            </light>
+                        </Lighting>
+                    </effect>
+                </Button>
+            </children></Pane>
         <Pane layoutX="173.0" layoutY="304.0" prefHeight="232.0" prefWidth="268.0" styleClass="dash-tile" />
     </children>
 </AnchorPane>

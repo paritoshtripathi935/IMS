@@ -10,6 +10,9 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
 import java.util.Objects;
 
 public class IncomingController {
@@ -96,5 +99,22 @@ public class IncomingController {
         userStage.setScene(AdminBoardScene);
         userStage.setTitle("User Management System");
         userStage.show();
+    }
+    public void LogoutAction(ActionEvent evt) throws IOException {
+        try {
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/inventory", "Andy", "Andy#2002");
+            Statement stmt = con.createStatement();
+            stmt.executeUpdate("delete from inventory.loginsession");
+            Parent AdminBoard = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/pageDesigns/LoginDesign.fxml")));
+            Scene AdminBoardScene = new Scene(AdminBoard);
+            Stage userStage = (Stage) ((Node) evt.getSource()).getScene().getWindow();
+            userStage.setScene(AdminBoardScene);
+            userStage.setTitle("Login Page");
+            userStage.show();
+
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
     }
 }

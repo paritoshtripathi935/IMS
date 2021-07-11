@@ -2,6 +2,7 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
@@ -38,7 +39,7 @@
                         <Font name="Segoe UI" size="13.0" />
                     </font>
                 </JFXButton>
-                <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="23.0" layoutY="543.0" prefHeight="30.0" prefWidth="97.0" styleClass="btn-log" text="LOGOUT" textFill="WHITE">
+                <JFXButton fx:id="Logact" alignment="CENTER" buttonType="RAISED" layoutX="23.0" layoutY="543.0" onAction="#LogoutAction" prefHeight="30.0" prefWidth="97.0" styleClass="btn-log" text="LOGOUT" textFill="WHITE">
                     <font>
                         <Font name="Segoe UI" size="13.0" />
                     </font>
@@ -97,7 +98,8 @@
                      </font>
                   </Text>
                   <DatePicker layoutX="167.0" layoutY="284.0" prefHeight="25.0" prefWidth="149.0" />
-                  <JFXButton fx:id="Sub" buttonType="RAISED" layoutX="167.0" layoutY="365.0" prefHeight="40.0" prefWidth="88.0" styleClass="dash-btn" text="Submit" textFill="WHITE" />
+                  <JFXButton fx:id="Sub" buttonType="RAISED" layoutX="167.0" layoutY="365.0" onAction="#AISOpenAction" prefHeight="40.0" prefWidth="88.0" styleClass="dash-btn" text="Submit" textFill="WHITE" />
+                  <Label fx:id="Stat" layoutX="356.0" layoutY="46.0" prefHeight="25.0" prefWidth="187.0" />
                </children>
             </Pane>
             <Text layoutX="26.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Code" wrappingWidth="100.85156249999994">
