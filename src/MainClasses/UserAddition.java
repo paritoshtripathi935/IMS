@@ -16,7 +16,7 @@ public class UserAddition extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/pageDesigns/UserAdd.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/pageDesigns/UMS/UserAdd.fxml"));
         primaryStage.setTitle("Login");
         primaryStage.setScene(new Scene(root, 1000, 600));
         primaryStage.show();

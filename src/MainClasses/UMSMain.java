@@ -12,7 +12,7 @@ public class UMSMain extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/pageDesigns/UMS.fxml")));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/pageDesigns/UMS/UMS.fxml")));
         primaryStage.setTitle("Login");
         primaryStage.setScene(new Scene(root, 1000, 600));
         primaryStage.show();

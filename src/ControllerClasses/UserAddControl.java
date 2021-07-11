@@ -12,11 +12,11 @@ import javafx.scene.control.*;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
-import javax.swing.text.Position;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
+import java.util.Objects;
 
 public class UserAddControl {
     @FXML
@@ -53,7 +53,7 @@ public class UserAddControl {
 
     @FXML
     public void switchAct(ActionEvent evt) throws IOException {
-        Parent userAdd = FXMLLoader.load(getClass().getResource("../pageDesigns/UMS.fxml"));
+        Parent userAdd = FXMLLoader.load(getClass().getResource("/pageDesigns/UMS/UMS.fxml"));
         Scene userAddScene = new Scene(userAdd);
         Stage userStage = (Stage) ((Node) evt.getSource()).getScene().getWindow();
         userStage.setScene(userAddScene);
@@ -79,15 +79,15 @@ public class UserAddControl {
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/inventory", "Andy", "Andy#2002");
             Statement stmt = con.createStatement();
             if(password.equals(confPass)) {
-                stmt.executeUpdate("Insert into userdata values('" + username + "','" + password + "','" + EmpN + "','" + first + "','" + last + "'," + posit + ",'" + phone + "')");
+                stmt.executeUpdate("Insert into userdata values('" + username + "','" + password + "','" + EmpN + "','" + first + "','" + last + "','" + posit + "'," + phone + ")");
                 stmt.executeUpdate("Insert into logindetails values('" + username + "','" + password + "','" + Admin + "')");
                 Status.setTextFill(Color.GREEN);
-                Status.setText("Record added!");
+                Status.setText("Record Added!");
             }
-            else
+            else {
                 Status.setTextFill(Color.RED);
-                Status.setText("Passwords do not Match");
-
+                Status.setText("Passwords do not match");
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -100,9 +100,18 @@ public class UserAddControl {
         Lname.setText("");
         Login.setText("");
         Password.setText("");
+        ConfPass.setText("");
         Position.setText("");
         Phone.setText("");
         YesRB.setSelected(false);
         NoRB.setSelected(false);
+    }
+    @FXML
+    public void BackHome(ActionEvent evt) throws Exception {
+        Parent userAdd = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/pageDesigns/AdminBoard.fxml")));
+        Scene userAddScene = new Scene(userAdd);
+        Stage userStage = (Stage) ((Node) evt.getSource()).getScene().getWindow();
+        userStage.setScene(userAddScene);
+        userStage.show();
     }
 }

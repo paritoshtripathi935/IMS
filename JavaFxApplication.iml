@@ -28,5 +28,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="fontawesomefx-materialicons-2.2.0-9.1.2" level="project" />
   </component>
 </module>

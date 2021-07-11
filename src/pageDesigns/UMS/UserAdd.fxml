@@ -13,7 +13,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="600.0" prefWidth="1000.0" styleClass="reg-back" stylesheets="@../css/app.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerClasses.UserAddControl">
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" styleClass="reg-back" stylesheets="@../../css/app.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerClasses.UserAddControl">
    <children>
       <Pane layoutY="-24.0" prefHeight="624.0" prefWidth="579.0" styleClass="grad2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="421.0" AnchorPane.topAnchor="-24.0">
          <children>
@@ -103,7 +103,7 @@
             </Label>
             <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="85.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Images/logo-crop.png" />
+                  <Image url="@../../Images/logo-crop.png" />
                </image>
             </ImageView>
          </children></Pane>

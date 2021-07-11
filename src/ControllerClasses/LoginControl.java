@@ -76,7 +76,15 @@ public class LoginControl {
 
     @FXML
     public void RegisterAction(ActionEvent evt) throws Exception {
-        Parent userAdd = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/pageDesigns/UserAdd.fxml")));
+        Parent userAdd = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../pageDesigns/UMS/UserAdd.fxml")));
+        Scene userAddScene = new Scene(userAdd);
+        Stage userStage = (Stage) ((Node) evt.getSource()).getScene().getWindow();
+        userStage.setScene(userAddScene);
+        userStage.show();
+    }
+    @FXML
+    public void BackHome(ActionEvent evt) throws Exception {
+        Parent userAdd = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../pageDesigns/AdminBoard.fxml")));
         Scene userAddScene = new Scene(userAdd);
         Stage userStage = (Stage) ((Node) evt.getSource()).getScene().getWindow();
         userStage.setScene(userAddScene);
