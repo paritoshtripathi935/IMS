@@ -99,7 +99,11 @@
                   </Text>
                   <DatePicker layoutX="167.0" layoutY="284.0" prefHeight="25.0" prefWidth="149.0" />
                   <JFXButton fx:id="Sub" buttonType="RAISED" layoutX="167.0" layoutY="365.0" onAction="#AISOpenAction" prefHeight="40.0" prefWidth="88.0" styleClass="dash-btn" text="Submit" textFill="WHITE" />
-                  <Label fx:id="Stat" layoutX="356.0" layoutY="46.0" prefHeight="25.0" prefWidth="187.0" />
+                  <Label fx:id="Stat" layoutX="356.0" layoutY="46.0" prefHeight="25.0" prefWidth="187.0" textFill="#233d94">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
                </children>
             </Pane>
             <Text layoutX="26.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Code" wrappingWidth="100.85156249999994">

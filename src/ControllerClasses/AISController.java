@@ -91,6 +91,6 @@ public class AISController {
     }
     @FXML
     public void AISOpenAction(ActionEvent evt) throws IOException {
-        Stat.setText("Hello");
+        Stat.setText("Hello ");
     }
 }

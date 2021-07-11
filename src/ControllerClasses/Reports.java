@@ -15,7 +15,7 @@ import java.sql.DriverManager;
 import java.sql.Statement;
 import java.util.Objects;
 
-public class UMSControl {
+public class Reports {
     @FXML
     public JFXButton CrUserBTN;
     @FXML
@@ -23,25 +23,6 @@ public class UMSControl {
     @FXML
     public JFXButton UMSbutton;
 
-    @FXML
-    public void UserCreate(ActionEvent evt) throws IOException {
-        Parent AdminBoard = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/pageDesigns/UMS/UserAdd.fxml")));
-        Scene AdminBoardScene = new Scene(AdminBoard);
-        Stage userStage = (Stage) ((Node) evt.getSource()).getScene().getWindow();
-        userStage.setScene(AdminBoardScene);
-        userStage.setTitle("Creating New User");
-        userStage.show();
-    }
-
-    @FXML
-    public void ManageUser(ActionEvent evt) throws IOException{
-        Parent AdminBoard = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/pageDesigns/ManageUser.fxml")));
-        Scene AdminBoardScene = new Scene(AdminBoard);
-        Stage userStage = (Stage) ((Node) evt.getSource()).getScene().getWindow();
-        userStage.setScene(AdminBoardScene);
-        userStage.setTitle("Creating New User");
-        userStage.show();
-    }
     @FXML
     public void IncomingOpenAction(ActionEvent evt) throws IOException {
         Parent AdminBoard = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/pageDesigns/Incoming/IncomingMenu.fxml")));
@@ -66,6 +47,15 @@ public class UMSControl {
         Scene userAddScene = new Scene(userAdd);
         Stage userStage = (Stage) ((Node) evt.getSource()).getScene().getWindow();
         userStage.setScene(userAddScene);
+        userStage.show();
+    }
+    @FXML
+    public void UMSOpenAction(ActionEvent evt) throws IOException {
+        Parent AdminBoard = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/pageDesigns/UMS/UMS.fxml")));
+        Scene AdminBoardScene = new Scene(AdminBoard);
+        Stage userStage = (Stage) ((Node) evt.getSource()).getScene().getWindow();
+        userStage.setScene(AdminBoardScene);
+        userStage.setTitle("User Management System");
         userStage.show();
     }
     @FXML

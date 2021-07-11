@@ -44,6 +44,15 @@ public class InventoryControl {
         userStage.show();
     }
     @FXML
+    public void ReportsOpenAction(ActionEvent evt) throws IOException {
+        Parent AdminBoard = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/pageDesigns/Reports/Repo.fxml")));
+        Scene AdminBoardScene = new Scene(AdminBoard);
+        Stage userStage = (Stage) ((Node) evt.getSource()).getScene().getWindow();
+        userStage.setScene(AdminBoardScene);
+        userStage.setTitle("Incoming");
+        userStage.show();
+    }
+    @FXML
     public void UMSOpenAction(ActionEvent evt) throws IOException {
         Parent AdminBoard = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/pageDesigns/UMS/UMS.fxml")));
         Scene AdminBoardScene = new Scene(AdminBoard);

@@ -31,7 +31,7 @@
                   <Font name="Segoe UI" size="13.0" />
                </font>
             </JFXButton>
-            <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="15.0" layoutY="357.0" prefHeight="40.0" prefWidth="140.0" styleClass="dash-btn" text="REPORTS" textFill="WHITE">
+            <JFXButton fx:id="rep" alignment="CENTER" buttonType="RAISED" layoutX="15.0" layoutY="357.0" onAction="#ReportsOpenAction" prefHeight="40.0" prefWidth="140.0" styleClass="dash-btn" text="REPORTS" textFill="WHITE">
                <font>
                   <Font name="Segoe UI" size="13.0" />
                </font>

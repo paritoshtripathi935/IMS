@@ -29,6 +29,15 @@ public class IncomingController {
         userStage.show();
     }
     @FXML
+    public void ReportsOpenAction(ActionEvent evt) throws IOException {
+        Parent AdminBoard = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/pageDesigns/Reports/Repo.fxml")));
+        Scene AdminBoardScene = new Scene(AdminBoard);
+        Stage userStage = (Stage) ((Node) evt.getSource()).getScene().getWindow();
+        userStage.setScene(AdminBoardScene);
+        userStage.setTitle("Incoming");
+        userStage.show();
+    }
+    @FXML
     public void OutgoingOpenAction(ActionEvent evt) throws IOException {
         Parent AdminBoard = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/pageDesigns/Outgoing/Outgoing.fxml")));
         Scene AdminBoardScene = new Scene(AdminBoard);
@@ -62,6 +71,15 @@ public class IncomingController {
         Stage userStage = (Stage) ((Node) evt.getSource()).getScene().getWindow();
         userStage.setScene(AdminBoardScene);
         userStage.setTitle("User Management System");
+        userStage.show();
+    }
+    @FXML
+    public void InvOpenAction(ActionEvent evt) throws IOException {
+        Parent AdminBoard = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/pageDesigns/Inventory/Inv.fxml")));
+        Scene AdminBoardScene = new Scene(AdminBoard);
+        Stage userStage = (Stage) ((Node) evt.getSource()).getScene().getWindow();
+        userStage.setScene(AdminBoardScene);
+        userStage.setTitle("Inventory");
         userStage.show();
     }
     @FXML
