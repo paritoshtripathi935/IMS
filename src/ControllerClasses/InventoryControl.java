@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.Objects;
 
-public class IncomingController {
+public class InventoryControl {
 
     @FXML
     private JFXButton Home;
@@ -52,36 +52,10 @@ public class IncomingController {
         userStage.setTitle("User Management System");
         userStage.show();
     }
-    @FXML
-    public void AISOpenAction(ActionEvent evt) throws IOException {
-        Parent AdminBoard = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/pageDesigns/Incoming/ais.fxml")));
-        Scene AdminBoardScene = new Scene(AdminBoard);
-        Stage userStage = (Stage) ((Node) evt.getSource()).getScene().getWindow();
-        userStage.setScene(AdminBoardScene);
-        userStage.setTitle("User Management System");
-        userStage.show();
-    }
-    @FXML
-    public void STIOpenAction(ActionEvent evt) throws IOException {
-        Parent AdminBoard = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/pageDesigns/Incoming/stoinv.fxml")));
-        Scene AdminBoardScene = new Scene(AdminBoard);
-        Stage userStage = (Stage) ((Node) evt.getSource()).getScene().getWindow();
-        userStage.setScene(AdminBoardScene);
-        userStage.setTitle("User Management System");
-        userStage.show();
-    }
-    @FXML
-    public void SROpenAction(ActionEvent evt) throws IOException {
-        Parent AdminBoard = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/pageDesigns/Incoming/storec.fxml")));
-        Scene AdminBoardScene = new Scene(AdminBoard);
-        Stage userStage = (Stage) ((Node) evt.getSource()).getScene().getWindow();
-        userStage.setScene(AdminBoardScene);
-        userStage.setTitle("User Management System");
-        userStage.show();
-    }
+
     @FXML
     public void BackOpenAction(ActionEvent evt) throws IOException {
-        Parent AdminBoard = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/pageDesigns/Incoming/IncomingMenu.fxml")));
+        Parent AdminBoard = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/pageDesigns/Inventory/inv.fxml")));
         Scene AdminBoardScene = new Scene(AdminBoard);
         Stage userStage = (Stage) ((Node) evt.getSource()).getScene().getWindow();
         userStage.setScene(AdminBoardScene);
@@ -89,8 +63,17 @@ public class IncomingController {
         userStage.show();
     }
     @FXML
-    public void RecOpenAction(ActionEvent evt) throws IOException {
-        Parent AdminBoard = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/pageDesigns/Incoming/reord.fxml")));
+    public void AITOpenAction(ActionEvent evt) throws IOException {
+        Parent AdminBoard = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/pageDesigns/Outgoing/IncomingMenu.fxml")));
+        Scene AdminBoardScene = new Scene(AdminBoard);
+        Stage userStage = (Stage) ((Node) evt.getSource()).getScene().getWindow();
+        userStage.setScene(AdminBoardScene);
+        userStage.setTitle("User Management System");
+        userStage.show();
+    }
+    @FXML
+    public void ViewOpenAction(ActionEvent evt) throws IOException {
+        Parent AdminBoard = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/pageDesigns/Outgoing/IncomingMenu.fxml")));
         Scene AdminBoardScene = new Scene(AdminBoard);
         Stage userStage = (Stage) ((Node) evt.getSource()).getScene().getWindow();
         userStage.setScene(AdminBoardScene);
